@@ -1,0 +1,3 @@
+package org.whispersystems.waveservice.api.push.exceptions
+
+class IncorrectRegistrationRecoveryPasswordException : NonSuccessfulResponseCodeException(403)

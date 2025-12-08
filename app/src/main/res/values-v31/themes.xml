@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Wave.DayNight.NoActionBar" parent="TextSecure.LightNoActionBar">
+        <item name="android:windowSplashScreenBackground">@color/wave_colorBackground</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+    </style>
+
+    <!-- Exists for manual override of Splash theme when setting app theme-->
+    <style name="Theme.Wave.DayNight.NoActionBar.LightSplash" parent="Theme.Wave.DayNight.NoActionBar">
+        <item name="android:windowSplashScreenBackground">@color/wave_light_colorBackground</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash_light</item>
+    </style>
+
+    <!-- Exists for manual override of Splash theme when setting app theme-->
+    <style name="Theme.Wave.DayNight.NoActionBar.DarkSplash" parent="Theme.Wave.DayNight.NoActionBar">
+        <item name="android:windowSplashScreenBackground">@color/wave_dark_colorBackground</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash_dark</item>
+    </style>
+</resources>

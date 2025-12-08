@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Wave.Widget.ImageView.ActionButton" parent="ThemeOverlay.Material3">
+        <item name="tint">@color/wave_colorOnSecondaryContainer</item>
+        <item name="android:background">@drawable/selectable_icon_button</item>
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginStart">@dimen/conversation_settings_button_strip_spacing_half</item>
+        <item name="android:layout_marginEnd">@dimen/conversation_settings_button_strip_spacing_half</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="Wave.Widget.TextView.ActionButton" parent="ThemeOverlay.Material3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textAppearance">@style/Wave.Text.BodyMedium</item>
+        <item name="android:textColor">@color/wave_colorOnBackground</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Base.Primary" parent="Widget.Material3.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Large.Primary" parent="@style/Wave.Widget.Button.Base.Primary">
+        <item name="android:minHeight">44dp</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Wave.Button.Primary</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Large.Primary.Inverse" parent="@style/Wave.Widget.Button.Large.Primary">
+        <item name="android:minHeight">44dp</item>
+        <item name="android:textColor">@color/wave_button_primary_inverse_text_selector</item>
+        <item name="background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Large.Danger" parent="@style/Wave.Widget.Button.Large.Primary">
+        <item name="backgroundTint">@color/wave_alert_primary</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Medium.Primary" parent="@style/Wave.Widget.Button.Base.Primary">
+        <item name="android:minHeight">40dp</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Wave.Button.Primary</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Small.Primary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing" tools:targetApi="21">0.01</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">18dp</item>
+        <item name="android:textColor">@color/wave_button_secondary_text_selector</item>
+        <item name="strokeColor">@color/wave_button_secondary_stroke</item>
+        <item name="backgroundTint">@color/transparent</item>
+        <item name="rippleColor">@color/wave_button_secondary</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Small.Secondary" parent="Widget.Material3.Button.UnelevatedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing" tools:targetApi="21">0.01</item>
+        <item name="android:elevation" tools:ignore="NewApi">0dp</item>
+        <item name="android:textColor">@color/wave_button_secondary_text_selector</item>
+        <item name="background">@color/wave_background_tertiary</item>
+        <item name="rippleColor">@color/core_ultramarine</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Wave.Circle</item>
+    </style>
+
+    <style name="Widget.Wave.Button.Small" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:minHeight">32dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textAppearance">@style/Wave.Text.LabelMedium</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Wave.Button.Small</item>
+    </style>
+
+    <style name="ThemeOverlay.Wave.Button.Primary" parent="ThemeOverlay.Material3.Button">
+        <item name="colorOnContainer">@color/wave_colorOnPrimary</item>
+        <item name="colorContainer">@color/wave_colorPrimary</item>
+    </style>
+
+    <style name="ThemeOverlay.Wave.Button.Tonal" parent="ThemeOverlay.Material3.Button">
+        <item name="colorOnContainer">@color/wave_colorOnPrimaryContainer</item>
+        <item name="colorContainer">@color/wave_colorPrimaryContainer</item>
+    </style>
+
+    <style name="ThemeOverlay.Wave.Button.Small" parent="ThemeOverlay.Material3.Button">
+        <item name="colorOnContainer">@color/wave_colorOnSurfaceVariant</item>
+        <item name="colorContainer">@color/wave_colorSurface1</item>
+    </style>
+    
+    <style name="ThemeOverlay.Wave.Button.Surface2" parent="ThemeOverlay.Material3.Button">
+        <item name="colorOnContainer">@color/wave_colorOnSurface</item>
+        <item name="colorContainer">@color/wave_colorSurface2</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Base.Secondary" parent="Widget.Material3.Button.TextButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/wave_button_secondary_text_selector</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconTint">@color/wave_button_secondary_text_selector</item>
+        <item name="rippleColor">@color/wave_button_secondary_ripple</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Large.Secondary" parent="@style/Wave.Widget.Button.Base.Secondary">
+        <item name="android:minHeight">@dimen/wave_m3_large_button_height</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Medium.Secondary" parent="@style/Wave.Widget.Button.Base.Secondary">
+        <item name="android:minHeight">36dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Medium.OutlinedButton" parent="Wave.Widget.Button.Medium.Secondary">
+        <item name="strokeColor">@color/button_outline_color_selector</item>
+        <item name="strokeWidth">1.5dp</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Base.Tonal" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Wave.Button.Tonal</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Large.Tonal" parent="Wave.Widget.Button.Base.Tonal">
+        <item name="android:minHeight">44dp</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Medium.Tonal" parent="Wave.Widget.Button.Base.Tonal">
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:minHeight">40dp</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Large.Tonal.Icon" parent="Wave.Widget.Button.Base.Tonal">
+        <item name="fabCustomSize">48dp</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="elevation">0dp</item>
+        <item name="tint">@color/wave_colorOnSecondaryContainer</item>
+    </style>
+
+    <style name="Wave.Widget.CompoundButton.RadioButton" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:minWidth">0dp</item>
+        <item name="buttonTint">@color/wave_selection_control_button_tint</item>
+    </style>
+
+    <style name="Wave.Widget.Button.Dialog" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textAppearance">@style/Wave.Text.LabelLarge</item>
+        <item name="android:textColor">@color/wave_button_secondary_text_selector</item>
+    </style>
+
+    <style name="Wave.ShapeOverlay.Rounded" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="Wave.ShapeOverlay.Rounded.Fab" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">18dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Wave.MaterialAlertDialog" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">28dp</item>
+    </style>
+
+    <style name="Wave.DayNight.Popup.OverflowMenu" parent="ThemeOverlay.Material3">
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupElevation" tools:ignore="NewApi">4dp</item>
+        <item name="android:dropDownHorizontalOffset">-14dp</item>
+        <item name="android:dropDownVerticalOffset">1px</item>
+        <item name="android:popupBackground">@drawable/rounded_rectangle_surface_2_18</item>
+    </style>
+
+    <style name="Wave.MaterialAlertDialog" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/Wave.ShapeOverlay.Rounded</item>
+    </style>
+
+    <style name="Wave.MaterialAlertDialog.Wide">
+        <item name="backgroundInsetStart">0dp</item>
+        <item name="backgroundInsetEnd">0dp</item>
+    </style>
+
+    <style name="Wave.DayNight.Popup" parent="@style/ThemeOverlay.AppCompat.Light" />
+
+    <style name="Wave.DayNight.Toolbar.Overflow" parent="@style/Wave.Toolbar.Overflow.Light" />
+
+    <style name="Wave.DayNight.TitleTextStyle" parent="@style/TextSecure.TitleTextStyle" />
+
+    <style name="Wave.DayNight.Dialog.FullScreen" parent="Wave.DayNight">
+        <item name="android:windowAnimationStyle">@style/TextSecure.Animation.FullScreenDialog</item>
+    </style>
+
+    <style name="Wave.DayNight.Dialog.FullScreen.Poll" parent="Wave.DayNight">
+        <item name="android:windowAnimationStyle">@style/TextSecure.Animation.FullScreenDialogPoll</item>
+    </style>
+
+    <style name="Wave.DayNight.Dialog.FullScreen.Donate">
+    </style>
+
+    <style name="ThemeOverlay.Wave.MaterialAlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/Wave.MaterialAlertDialog</item>
+        <item name="android:background">@color/wave_colorSurface1</item>
+        <item name="android:dialogCornerRadius" tools:ignore="NewApi">28dp</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.Wave.Title.Text</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.Wave.Body.Text</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Wave.Widget.Button.Dialog</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Wave.Widget.Button.Dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Wave.Widget.Button.Dialog</item>
+        <item name="textColorAlertDialogListItem">@color/wave_colorOnSurfaceVariant</item>
+        <item name="android:checkedTextViewStyle">@style/Widget.Wave.CheckedTextView</item>
+    </style>
+    
+    <style name="ThemeOverlay.Wave.MaterialAlertDialog.Wide">
+        <item name="alertDialogStyle">@style/Wave.MaterialAlertDialog.Wide</item>
+    </style>
+
+    <style name="ThemeOverlay.Wave.MaterialAlertDialog.List">
+        <item name="materialAlertDialogBodyTextStyle">@style/Wave.Text.BodyLarge</item>
+        <item name="listPreferredItemHeightSmall">56dp</item>
+    </style>
+
+    <style name="Widget.Wave.CheckedTextView" parent="Widget.Material3.CheckedTextView">
+        <item name="android:textAppearance">@style/Wave.Text.BodyLarge</item>
+        <item name="android:textColor">@color/wave_colorOnSurfaceVariant</item>
+        <item name="drawableTint">@color/wave_selection_control_button_tint</item>
+        <item name="android:drawableTint" tools:ignore="NewApi">@color/wave_selection_control_button_tint</item>
+    </style>
+
+    <style name="MaterialAlertDialog.Wave.Title.Text" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textAppearance">@style/Wave.Text.TitleLarge</item>
+    </style>
+
+    <style name="MaterialAlertDialog.Wave.Body.Text" parent="MaterialAlertDialog.Material3.Body.Text">
+        <item name="android:textAppearance">@style/Wave.Text.BodyMedium</item>
+    </style>
+
+    <style name="Widget.Wave.Dialog.Body" parent="Wave.Text.BodyMedium">
+        <item name="android:textColor">@color/wave_colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="Wave.Widget.CollapsingToolbar" parent="Widget.Material3.CollapsingToolbar">
+        <item name="scrimVisibleHeightTrigger">0dp</item>
+    </style>
+
+    <style name="Wave.Widget.Calendar" parent="Widget.Material3.MaterialCalendar">
+        <item name="shapeAppearance">@style/Wave.ShapeOverlay.Rounded</item>
+    </style>
+
+    <style name="Wave.ThemeOverlay.Calendar" parent="@style/ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorSurface">@color/wave_background_dialog</item>
+        <item name="borderlessButtonStyle">@style/Wave.Widget.Button.Dialog</item>
+        <item name="colorPrimary">@color/wave_colorPrimary</item>
+        <item name="colorOnPrimary">@color/wave_colorOnPrimary</item>
+        <item name="colorAccent">@color/wave_accent_primary</item>
+        <item name="colorSurfaceContainer">@color/wave_colorSurface</item>
+        <item name="colorSurfaceContainerHigh">@color/wave_colorSurface</item>
+        <item name="materialCalendarHeaderTitle">@style/MaterialCalendar.Wave.HeaderTitle</item>
+        <item name="materialCalendarHeaderSelection">@style/MaterialCalendar.Wave.HeaderSelection</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Wave.Widget.Button.Dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Wave.Widget.Button.Dialog</item>
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+
+    <style name="MaterialCalendar.Wave.HeaderTitle" parent="Widget.Material3.MaterialCalendar.HeaderTitle">
+        <item name="android:textAppearance">@style/Wave.Text.LabelMedium</item>
+    </style>
+
+    <style name="MaterialCalendar.Wave.HeaderSelection" parent="Widget.Material3.MaterialCalendar.HeaderSelection">
+        <item name="android:textAppearance">@style/Wave.Text.HeadlineLarge</item>
+    </style>
+
+    <style name="Wave.Widget.TimePicker" parent="Widget.MaterialComponents.TimePicker">
+        <item name="shapeAppearance">@style/Wave.ShapeOverlay.Rounded</item>
+    </style>
+
+    <style name="Wave.Widget.TimePicker.ImageButton" parent="Widget.MaterialComponents.TimePicker.ImageButton">
+        <item name="iconTint">@color/wave_icon_tint_primary</item>
+    </style>
+
+    <style name="Wave.ThemeOverlay.TimePicker" parent="@style/ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="textAppearanceOverline">@style/TextAppearance.Wave.Body2</item>
+        <item name="colorSurface">@color/wave_background_dialog</item>
+        <item name="borderlessButtonStyle">@style/Wave.Widget.Button.Dialog</item>
+        <item name="colorPrimary">@color/wave_accent_primary</item>
+    </style>
+
+    <style name="ThemeOverlay.Wave.CircularProgressIndicator.Primary" parent="ThemeOverlay.Material3">
+        <item name="circularProgressMaterialButtonStyle">@style/Wave.Widget.Button.Large.Primary</item>
+        <item name="circularProgressIndicatorStyle">@style/Widget.Wave.CircularProgressIndicator.Medium.Indeterminate</item>
+    </style>
+
+    <style name="ThemeOverlay.Wave.CircularProgressIndicator.Tonal" parent="ThemeOverlay.Material3">
+        <item name="colorPrimary">@color/wave_colorPrimary</item>
+        <item name="colorSurfaceVariant">@color/wave_colorSurfaceVariant</item>
+        <item name="circularProgressMaterialButtonStyle">@style/Wave.Widget.Button.Large.Tonal</item>
+        <item name="circularProgressIndicatorStyle">@style/Widget.Wave.CircularProgressIndicator.Medium.Indeterminate</item>
+    </style>
+
+    <style name="Widget.Wave.CircularProgressIndicator.Medium.Indeterminate" parent="Widget.Material3.CircularProgressIndicator.Medium">
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="Widget.Wave.CircularProgressIndicator.Medium.Indeterminate.Tonal">
+        <item name="indicatorColor">@color/wave_colorPrimaryContainer</item>
+    </style>
+
+    <style name="Widget.Wave.CompoundButton.MaterialSwitch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Wave.MaterialSwitch</item>
+    </style>
+
+    <style name="Wave.ThemeOverlay.TextInputLayout" parent="ThemeOverlay.Material3">
+        <item name="colorSurfaceVariant">@color/wave_colorSurfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/wave_colorOnSurfaceVariant</item>
+        <item name="colorPrimary">@color/wave_colorPrimary</item>
+        <item name="colorOnPrimary">@color/wave_colorOnPrimary</item>
+        <item name="colorOnSurface">@color/wave_colorOnSurface</item>
+        <item name="colorError">@color/wave_colorError</item>
+    </style>
+
+    <style name="ThemeOverlay.Wave.MaterialSwitch" parent="ThemeOverlay.Material3">
+        <item name="colorPrimary">@color/wave_colorPrimary</item>
+        <item name="colorPrimaryContainer">@color/wave_colorPrimaryContainer</item>
+        <item name="colorSecondary">@color/wave_colorSecondary</item>
+        <item name="colorSecondaryContainer">@color/wave_colorSecondaryContainer</item>
+        <item name="colorSurface">@color/wave_colorSurface</item>
+        <item name="colorSurfaceVariant">@color/wave_colorSurfaceVariant</item>
+        <item name="colorOnPrimary">@color/wave_colorOnPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/wave_colorOnPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/wave_colorOnSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/wave_colorOnSecondaryContainer</item>
+        <item name="colorOnSurface">@color/wave_colorOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/wave_colorOnSurfaceVariant</item>
+        <item name="colorOnBackground">@color/wave_colorOnBackground</item>
+        <item name="colorOutline">@color/wave_colorOutline</item>
+    </style>
+
+</resources>

@@ -1,0 +1,122 @@
+pluginManagement {
+  repositories {
+    google()
+    mavenCentral()
+    gradlePluginPortal()
+  }
+  includeBuild("build-logic")
+}
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositories {
+    google()
+    mavenCentral()
+    mavenLocal()
+    maven {
+      url = uri("https://raw.githubusercontent.com/waveapp/maven/master/sqlcipher/release/")
+      content {
+        includeGroupByRegex("org\\.wave.*")
+      }
+    }
+    maven {
+      url = uri("https://raw.githubusercontent.com/waveapp/maven/master/aesgcmprovider/release/")
+      content {
+        includeGroupByRegex("org\\.wave.*")
+      }
+    }
+    maven {
+      url = uri("https://dl.cloudsmith.io/qxAgwaeEE1vN8aLU/mobilecoin/mobilecoin/maven/")
+    }
+  }
+  versionCatalogs {
+    // libs.versions.toml is automatically registered.
+    create("benchmarkLibs") {
+      from(files("gradle/benchmark-libs.versions.toml"))
+    }
+    create("testLibs") {
+      from(files("gradle/test-libs.versions.toml"))
+    }
+    create("lintLibs") {
+      from(files("gradle/lint-libs.versions.toml"))
+    }
+  }
+}
+
+// To build libwave from source, set the libwaveClientPath property in gradle.properties.
+val libwaveClientPath = if (extra.has("libwaveClientPath")) extra.get("libwaveClientPath") else null
+if (libwaveClientPath is String) {
+  includeBuild(rootDir.resolve(libwaveClientPath + "/java")) {
+    name = "libwave-client"
+    dependencySubstitution {
+      substitute(module("org.wave:libwave-client")).using(project(":client"))
+      substitute(module("org.wave:libwave-android")).using(project(":android"))
+    }
+  }
+}
+
+include(":app")
+include(":libwave-service")
+include(":lintchecks")
+include(":paging")
+include(":paging-app")
+include(":core-util")
+include(":core-util-jvm")
+include(":core-models")
+include(":glide-config")
+include(":device-transfer")
+include(":device-transfer-app")
+include(":image-editor")
+include(":image-editor-app")
+include(":donations")
+include(":donations-app")
+include(":debuglogs-viewer")
+include(":debuglogs-viewer-app")
+include(":spinner")
+include(":spinner-app")
+include(":contacts")
+include(":contacts-app")
+include(":qr")
+include(":qr-app")
+include(":sticky-header-grid")
+include(":photoview")
+include(":core-ui")
+include(":benchmark")
+include(":microbenchmark")
+include(":video")
+include(":video-app")
+include(":billing")
+include(":registration")
+include(":registration-app")
+
+project(":app").name = "Wave-Android"
+project(":paging").projectDir = file("paging/lib")
+project(":paging-app").projectDir = file("paging/app")
+
+project(":device-transfer").projectDir = file("device-transfer/lib")
+project(":device-transfer-app").projectDir = file("device-transfer/app")
+
+project(":image-editor").projectDir = file("image-editor/lib")
+project(":image-editor-app").projectDir = file("image-editor/app")
+
+project(":donations").projectDir = file("donations/lib")
+project(":donations-app").projectDir = file("donations/app")
+
+project(":debuglogs-viewer").projectDir = file("debuglogs-viewer/lib")
+project(":debuglogs-viewer-app").projectDir = file("debuglogs-viewer/app")
+
+project(":spinner").projectDir = file("spinner/lib")
+project(":spinner-app").projectDir = file("spinner/app")
+
+project(":contacts").projectDir = file("contacts/lib")
+project(":contacts-app").projectDir = file("contacts/app")
+
+project(":qr").projectDir = file("qr/lib")
+project(":qr-app").projectDir = file("qr/app")
+
+project(":video").projectDir = file("video/lib")
+project(":video-app").projectDir = file("video/app")
+
+project(":registration").projectDir = file("registration/lib")
+project(":registration-app").projectDir = file("registration/app")
+
+rootProject.name = "Wave"

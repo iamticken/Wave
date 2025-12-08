@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core colors for Material3 -->
+    <color name="wave_colorPrimary">@color/wave_dark_colorPrimary</color>
+    <color name="wave_colorPrimaryContainer">@color/wave_dark_colorPrimaryContainer</color>
+    <color name="wave_colorSecondary">@color/wave_dark_colorSecondary</color>
+    <color name="wave_colorSecondaryContainer">@color/wave_dark_colorSecondaryContainer</color>
+    <color name="wave_colorSurface">@color/wave_dark_colorSurface</color>
+    <color name="wave_colorSurfaceVariant">@color/wave_dark_colorSurfaceVariant</color>
+    <color name="wave_colorBackground">@color/wave_dark_colorBackground</color>
+    <color name="wave_colorError">@color/wave_dark_colorError</color>
+    <color name="wave_colorErrorContainer">@color/wave_dark_colorErrorContainer</color>
+    <color name="wave_colorOnPrimary">@color/wave_dark_colorOnPrimary</color>
+    <color name="wave_colorOnPrimaryContainer">@color/wave_dark_colorOnPrimaryContainer</color>
+    <color name="wave_colorOnSecondary">@color/wave_dark_colorOnSecondary</color>
+    <color name="wave_colorOnSecondaryContainer">@color/wave_dark_colorOnSecondaryContainer</color>
+    <color name="wave_colorOnSurface">@color/wave_dark_colorOnSurface</color>
+    <color name="wave_colorOnSurfaceVariant">@color/wave_dark_colorOnSurfaceVariant</color>
+    <color name="wave_colorOnSurfaceVariant1">@color/wave_dark_colorOnSurfaceVariant1</color>
+    <color name="wave_colorOnBackground">@color/wave_dark_colorOnBackground</color>
+    <color name="wave_colorOutline">@color/wave_dark_colorOutline</color>
+    <color name="wave_neutralSurface">@color/wave_dark_neutralSurface</color>
+    <color name="wave_colorOnCustom">@color/wave_dark_colorOnCustom</color>
+    <color name="wave_colorOnCustomVariant">@color/wave_dark_colorOnCustomVariant</color>
+
+    <color name="wave_colorSurface1">@color/wave_dark_colorSurface1</color>
+    <color name="wave_colorSurface2">@color/wave_dark_colorSurface2</color>
+    <color name="wave_colorSurface3">@color/wave_dark_colorSurface3</color>
+    <color name="wave_colorSurface4">@color/wave_dark_colorSurface4</color>
+    <color name="wave_colorSurface5">@color/wave_dark_colorSurface5</color>
+
+    <color name="wave_colorTransparent1">@color/wave_dark_colorTransparent1</color>
+    <color name="wave_colorTransparent2">@color/wave_dark_colorTransparent2</color>
+    <color name="wave_colorTransparent3">@color/wave_dark_colorTransparent3</color>
+    <color name="wave_colorTransparent4">@color/wave_dark_colorTransparent4</color>
+    <color name="wave_colorTransparent5">@color/wave_dark_colorTransparent5</color>
+    <color name="wave_colorNeutral">@color/wave_dark_colorNeutral</color>
+    <color name="wave_colorNeutralVariant">@color/wave_dark_colorNeutralVariant</color>
+    <color name="wave_colorTransparentInverse1">@color/wave_dark_colorTransparentInverse1</color>
+    <color name="wave_colorTransparentInverse2">@color/wave_dark_colorTransparentInverse2</color>
+    <color name="wave_colorTransparentInverse3">@color/wave_dark_colorTransparentInverse3</color>
+    <color name="wave_colorTransparentInverse4">@color/wave_dark_colorTransparentInverse4</color>
+    <color name="wave_colorTransparentInverse5">@color/wave_dark_colorTransparentInverse5</color>
+    <color name="wave_colorNeutralInverse">@color/wave_dark_colorNeutralInverse</color>
+    <color name="wave_colorNeutralVariantInverse">@color/wave_dark_colorNeutralVariantInverse</color>
+
+    <!-- Inverses -->
+    <color name="wave_colorErrorInverse">@color/wave_light_colorError</color>
+    <color name="wave_colorErrorContainerInverse">@color/wave_light_colorErrorContainer</color>
+
+    <!-- Core color alpha variants -->
+    <color name="wave_colorSecondaryContainer_12">#1F414659</color>
+    <color name="wave_colorSurface_60">#991B1C1F</color>
+    <color name="wave_colorSurfaceVariant_38">#61303133</color>
+    <color name="wave_colorSurfaceVariant_64">#A3303133</color>
+    <color name="wave_colorOnSurface_12">#1FE2E1E5</color>
+    <color name="wave_colorOnSurface_50">#80E2E1E5</color>
+    <color name="wave_colorOnSurfaceVariant_60">#99BEBFC5</color>
+    <color name="wave_colorOnBackground_60">#99E2E1E5</color>
+    <color name="wave_colorOutline_38">#615C5E65</color>
+    <color name="wave_colorBackground_0">#001B1C1F</color>
+
+    <!-- Core color alpha variants without alpha channel -->
+    <color name="wave_colorSurfaceVariant_16_no_alpha">#3F4249</color>
+    <color name="wave_colorSurfaceVariant_32_no_alpha">#5D5E62</color>
+
+</resources>

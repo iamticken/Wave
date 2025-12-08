@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Wave.DayNight" parent="Wave.LightTheme" />
+
+    <style name="Wave.DayNight.NoActionBar" parent="Wave.LightNoActionBar" />
+
+    <style name="Wave.DayNight.Invite" parent="Wave.Light.NoActionBar.Invite" />
+
+    <style name="Wave.DayNight.IntroTheme" parent="Wave.LightIntroTheme" />
+
+    <style name="Wave.DayNight.DarkActionBar" parent="Wave.LightTheme.Conversation" />
+
+    <style name="Wave.DayNight.DarkNoActionBar" parent="Wave.LightNoActionBar.DarkToolbar" />
+
+    <style name="Wave.DayNight.Registration" parent="Wave.LightRegistrationTheme" />
+
+    <style name="Wave.DayNight.WallpaperCropper" parent="Theme.Wave.WallpaperCropper.Light" />
+
+    <style name="Wave.DayNight.BottomSheet.Rounded" parent="Theme.Wave.RoundedBottomSheet.Light" />
+
+    <style name="Wave.DayNight.ConversationSettings" parent="Wave.LightNoActionBar.ConversationSettings" />
+</resources>

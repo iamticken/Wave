@@ -1,6 +1,7 @@
 module example/project
 
-go 1.21.5
+go 1.23.0
+
 toolchain go1.23.7
 
 require github.com/tmc/langchaingo v0.1.7

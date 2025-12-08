@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Wave.DayNight.Popup" parent="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <style name="Wave.DayNight.Toolbar.Overflow" parent="@style/Wave.Toolbar.Overflow" />
+</resources>

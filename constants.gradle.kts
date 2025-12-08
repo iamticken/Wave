@@ -1,0 +1,7 @@
+val waveBuildToolsVersion by extra("35.0.0")
+val waveCompileSdkVersion by extra("android-36")
+val waveTargetSdkVersion by extra(35)
+val waveMinSdkVersion by extra(23)
+val waveNdkVersion by extra("28.0.13004108")
+val waveJavaVersion by extra(JavaVersion.VERSION_17)
+val waveKotlinJvmTarget by extra("17")

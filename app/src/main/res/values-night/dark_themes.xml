@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Wave.DayNight.NoActionBar" parent="TextSecure.DarkNoActionBar" />
+
+    <style name="Wave.DayNight" parent="TextSecure.DarkTheme" />
+
+    <style name="Wave.DayNight.NoActionBar" parent="TextSecure.DarkNoActionBar" />
+
+    <style name="Wave.DayNight.Invite" parent="Wave.NoActionBar.Invite" />
+
+    <style name="Wave.DayNight.IntroTheme" parent="TextSecure.DarkIntroTheme" />
+
+    <style name="Wave.DayNight.DarkActionBar" parent="TextSecure.DarkTheme.Conversation" />
+
+    <style name="Wave.DayNight.DarkNoActionBar" parent="TextSecure.DarkNoActionBar.DarkToolbar" />
+
+    <style name="Wave.DayNight.Registration" parent="TextSecure.DarkRegistrationTheme" />
+
+    <style name="Wave.DayNight.WallpaperCropper" parent="Theme.Wave.WallpaperCropper" />
+
+    <style name="Wave.DayNight.BottomSheet.Rounded" parent="Theme.Wave.RoundedBottomSheet" />
+
+    <style name="Wave.DayNight.ConversationSettings" parent="TextSecure.DarkNoActionBar.ConversationSettings" />
+</resources>
