@@ -1,0 +1,22 @@
+[debug] [2025-12-09T11:04:29.836Z] ----------------------------------------------------------------------
+[debug] [2025-12-09T11:04:29.840Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/c776mhyhgykcld7p90ajrka149ifn61a-firebase-tools-14.26.0/lib/node_modules/firebase-tools/lib/bin/firebase.js init
+[debug] [2025-12-09T11:04:29.841Z] CLI Version:   14.26.0
+[debug] [2025-12-09T11:04:29.841Z] Platform:      linux
+[debug] [2025-12-09T11:04:29.842Z] Node Version:  v20.19.1
+[debug] [2025-12-09T11:04:29.842Z] Time:          Tue Dec 09 2025 11:04:29 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-12-09T11:04:29.842Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-09T11:04:29.859Z] No OAuth tokens found
+[debug] [2025-12-09T11:04:29.860Z] No OAuth tokens found
+[error] Failed to fetch Firebase Project from current Studio Workspace: Unable to refresh auth: not yet authenticated.
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/agares
+
