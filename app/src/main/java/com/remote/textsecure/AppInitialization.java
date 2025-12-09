@@ -1,22 +1,22 @@
-package org.thoughtcrime.securesms;
+package com.remote.textsecure;
 
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 
 import org.wave.core.util.logging.Log;
-import org.thoughtcrime.securesms.dependencies.AppDependencies;
-import org.thoughtcrime.securesms.jobmanager.JobManager;
-import org.thoughtcrime.securesms.jobs.DeleteAbandonedAttachmentsJob;
-import org.thoughtcrime.securesms.jobs.EmojiSearchIndexDownloadJob;
-import org.thoughtcrime.securesms.jobs.QuoteThumbnailBackfillJob;
-import org.thoughtcrime.securesms.jobs.StickerPackDownloadJob;
-import org.thoughtcrime.securesms.keyvalue.WaveStore;
-import org.thoughtcrime.securesms.migrations.ApplicationMigrations;
-import org.thoughtcrime.securesms.migrations.QuoteThumbnailBackfillMigrationJob;
-import org.thoughtcrime.securesms.stickers.BlessedPacks;
-import org.thoughtcrime.securesms.util.TextSecurePreferences;
-import org.thoughtcrime.securesms.util.Util;
+import com.remote.textsecure.dependencies.AppDependencies;
+import com.remote.textsecure.jobmanager.JobManager;
+import com.remote.textsecure.jobs.DeleteAbandonedAttachmentsJob;
+import com.remote.textsecure.jobs.EmojiSearchIndexDownloadJob;
+import com.remote.textsecure.jobs.QuoteThumbnailBackfillJob;
+import com.remote.textsecure.jobs.StickerPackDownloadJob;
+import com.remote.textsecure.keyvalue.WaveStore;
+import com.remote.textsecure.migrations.ApplicationMigrations;
+import com.remote.textsecure.migrations.QuoteThumbnailBackfillMigrationJob;
+import com.remote.textsecure.stickers.BlessedPacks;
+import com.remote.textsecure.util.TextSecurePreferences;
+import com.remote.textsecure.util.Util;
 
 /**
  * Rule of thumb: if there's something you want to do on the first app launch that involves

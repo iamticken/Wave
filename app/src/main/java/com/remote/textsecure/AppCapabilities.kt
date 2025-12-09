@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms
+package com.remote.textsecure
 
 import org.whispersystems.waveservice.api.account.AccountAttributes
 

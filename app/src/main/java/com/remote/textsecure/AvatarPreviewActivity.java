@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms;
+package com.remote.textsecure;
 
 import android.app.Activity;
 import android.content.Context;
@@ -28,14 +28,14 @@ import com.bumptech.glide.request.transition.Transition;
 import com.github.chrisbanes.photoview.PhotoView;
 
 import org.wave.core.util.logging.Log;
-import org.thoughtcrime.securesms.avatar.fallback.FallbackAvatar;
-import org.thoughtcrime.securesms.avatar.fallback.FallbackAvatarDrawable;
-import org.thoughtcrime.securesms.components.emoji.EmojiTextView;
-import org.thoughtcrime.securesms.contacts.avatars.ContactPhoto;
-import org.thoughtcrime.securesms.contacts.avatars.ProfileContactPhoto;
-import org.thoughtcrime.securesms.recipients.Recipient;
-import org.thoughtcrime.securesms.recipients.RecipientId;
-import org.thoughtcrime.securesms.util.FullscreenHelper;
+import com.remote.textsecure.avatar.fallback.FallbackAvatar;
+import com.remote.textsecure.avatar.fallback.FallbackAvatarDrawable;
+import com.remote.textsecure.components.emoji.EmojiTextView;
+import com.remote.textsecure.contacts.avatars.ContactPhoto;
+import com.remote.textsecure.contacts.avatars.ProfileContactPhoto;
+import com.remote.textsecure.recipients.Recipient;
+import com.remote.textsecure.recipients.RecipientId;
+import com.remote.textsecure.util.FullscreenHelper;
 
 /**
  * Activity for displaying avatars full screen.

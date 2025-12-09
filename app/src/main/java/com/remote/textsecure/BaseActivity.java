@@ -1,4 +1,4 @@
-package org.thoughtcrime.securesms;
+package com.remote.textsecure;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,11 +14,11 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.ActivityOptionsCompat;
 
 import org.wave.core.util.logging.Log;
-import org.thoughtcrime.securesms.dependencies.AppDependencies;
-import org.thoughtcrime.securesms.util.AppStartup;
-import org.thoughtcrime.securesms.util.ConfigurationUtil;
-import org.thoughtcrime.securesms.util.WindowUtil;
-import org.thoughtcrime.securesms.util.dynamiclanguage.DynamicLanguageContextWrapper;
+import com.remote.textsecure.dependencies.AppDependencies;
+import com.remote.textsecure.util.AppStartup;
+import com.remote.textsecure.util.ConfigurationUtil;
+import com.remote.textsecure.util.WindowUtil;
+import com.remote.textsecure.util.dynamiclanguage.DynamicLanguageContextWrapper;
 
 import java.util.Objects;
 
