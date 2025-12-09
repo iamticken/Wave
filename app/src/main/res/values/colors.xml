@@ -1,8 +1,11 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <color name="white">@color/core_white</color>
-    <color name="black">@color/core_black</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 
+    <color name="wave_primary">#1DA1F2</color>
+    <color name="wave_primary_dark">#1DA1F2</color>
+    <color name="wave_accent">#1DA1F2</color>
     <color name="wave_accent_green">#4CAF50</color>
 
     <color name="story_gradient_start">#99000000</color>
@@ -41,7 +44,7 @@
 
     <color name="conversation_compose_divider">#32000000</color>
 
-    <color name="touch_highlight">#400099cc</color>
+    <color name="touch_highlight">#401DA1F2</color>
     <color name="touch_highlight_material3">#14E2E1E5</color>
 
     <color name="ConversationListTabs__unread">#FFCE4A40</color>
@@ -51,16 +54,16 @@
 
     <color name="media_preview_bar_background">#90010101</color>
 
-    <color name="storage_color_empty">@color/core_grey_50</color>
-    <color name="storage_color_photos">#ff5951C8</color>
-    <color name="storage_color_videos">#ff9BCFBD</color>
-    <color name="storage_color_audio">@color/core_ultramarine</color>
-    <color name="storage_color_files">#ffA23474</color>
-    <color name="conversation_list_archive_background_start">@color/wave_colorPrimary</color>
-    <color name="conversation_list_archive_background_end">@color/wave_colorPrimary</color>
+    <color name="storage_color_empty">#BDBDBD</color>
+    <color name="storage_color_photos">#1DA1F2</color>
+    <color name="storage_color_videos">#9BCFBD</color>
+    <color name="storage_color_audio">#1DA1F2</color>
+    <color name="storage_color_files">#A23474</color>
+    <color name="conversation_list_archive_background_start">@color/wave_primary</color>
+    <color name="conversation_list_archive_background_end">@color/wave_primary</color>
 
-    <color name="safety_number_card_grey">#ffEBEAE8</color>
-    <color name="safety_number_card_blue">#ff506ECD</color>
+    <color name="safety_number_card_grey">#E0E0E0</color>
+    <color name="safety_number_card_blue">#1DA1F2</color>
 
-    <color name="notification_background_ultramarine">#3B45FD</color>
+    <color name="notification_background_ultramarine">#1DA1F2</color>
 </resources>
