@@ -15,13 +15,13 @@ dependencyResolutionManagement {
     maven {
       url = uri("https://raw.githubusercontent.com/waveapp/maven/master/sqlcipher/release/")
       content {
-        includeGroupByRegex("org\\.wave.*")
+        includeGroupByRegex("org\\.thoughtcrime.*")
       }
     }
     maven {
       url = uri("https://raw.githubusercontent.com/waveapp/maven/master/aesgcmprovider/release/")
       content {
-        includeGroupByRegex("org\\.wave.*")
+        includeGroupByRegex("org\\.thoughtcrime.*")
       }
     }
     maven {
