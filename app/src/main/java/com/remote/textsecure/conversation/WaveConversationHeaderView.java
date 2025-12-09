@@ -32,7 +32,7 @@ import org.thoughtcrime.securesms.components.emoji.EmojiTextView;
 import org.thoughtcrime.securesms.conversation.colors.AvatarGradientColors;
 import org.thoughtcrime.securesms.conversation.v2.data.AvatarDownloadStateCache;
 import org.thoughtcrime.securesms.database.WaveDatabase;
-import org.thoughtcrime.securesms.databinding.ConversationHeaderViewBinding;
+import org.thoughtcrime.securesms.databinding.WaveConversationHeaderViewBinding;
 import org.thoughtcrime.securesms.fonts.WaveSymbols;
 import org.thoughtcrime.securesms.jobs.AvatarGroupsV2DownloadJob;
 import org.thoughtcrime.securesms.jobs.RetrieveProfileAvatarJob;
@@ -43,31 +43,31 @@ import org.thoughtcrime.securesms.util.SpanUtil;
 import org.thoughtcrime.securesms.util.ViewUtil;
 import org.whispersystems.waveservice.api.util.Preconditions;
 
-public class ConversationHeaderView extends ConstraintLayout {
+public class WaveConversationHeaderView extends ConstraintLayout {
 
-  private static final String TAG           = Log.tag(ConversationHeaderView.class);
+  private static final String TAG           = Log.tag(WaveConversationHeaderView.class);
   private static final int    FADE_DURATION = 150;
   private static final int    LOADING_DELAY = 800;
 
-  private final ConversationHeaderViewBinding binding;
+  private final WaveConversationHeaderViewBinding binding;
 
   private boolean inProgress = false;
   private Handler handler    = new Handler();
 
-  public ConversationHeaderView(Context context) {
+  public WaveConversationHeaderView(Context context) {
     this(context, null);
   }
 
-  public ConversationHeaderView(Context context, AttributeSet attrs) {
+  public WaveConversationHeaderView(Context context, AttributeSet attrs) {
     this(context, attrs, 0);
   }
 
-  public ConversationHeaderView(Context context, AttributeSet attrs, int defStyleAttr) {
+  public WaveConversationHeaderView(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
 
-    inflate(getContext(), R.layout.conversation_header_view, this);
+    inflate(getContext(), R.layout.wave_conversation_header_view, this);
 
-    binding = ConversationHeaderViewBinding.bind(this);
+    binding = WaveConversationHeaderViewBinding.bind(this);
   }
 
   public void showProgressBar(@NonNull Recipient recipient) {

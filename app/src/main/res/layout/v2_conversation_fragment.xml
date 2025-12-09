@@ -113,7 +113,7 @@
 
             <include
                 android:id="@+id/conversation_title_view"
-                layout="@layout/conversation_title_view"
+                layout="@layout/wave_conversation_title_view"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />

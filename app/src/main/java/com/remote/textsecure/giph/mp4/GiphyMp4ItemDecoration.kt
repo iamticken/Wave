@@ -4,7 +4,7 @@ import android.graphics.Canvas
 import android.graphics.Rect
 import androidx.core.view.children
 import androidx.recyclerview.widget.RecyclerView
-import org.thoughtcrime.securesms.conversation.ConversationHeaderView
+import org.thoughtcrime.securesms.conversation.WaveConversationHeaderView
 import kotlin.math.min
 
 /**
@@ -27,8 +27,8 @@ class GiphyMp4ItemDecoration(
       parent.translationY = 0f
       onRecyclerVerticalTranslationSet?.invoke(parent.translationY)
     } else {
-      val threadHeaderView: ConversationHeaderView? = parent.children
-        .filterIsInstance<ConversationHeaderView>()
+      val threadHeaderView: WaveConversationHeaderView? = parent.children
+        .filterIsInstance<WaveConversationHeaderView>()
         .firstOrNull()
 
       if (threadHeaderView == null) {

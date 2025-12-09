@@ -27,7 +27,7 @@ import org.thoughtcrime.securesms.util.DrawableUtil;
 import org.thoughtcrime.securesms.util.ExpirationUtil;
 import org.thoughtcrime.securesms.util.ViewUtil;
 
-public class ConversationTitleView extends ConstraintLayout {
+public class WaveConversationTitleView extends ConstraintLayout {
 
   private static final String STATE_ROOT = "root";
   private static final String STATE_IS_SELF = "is_self";
@@ -43,11 +43,11 @@ public class ConversationTitleView extends ConstraintLayout {
   private TextView        expirationBadgeTime;
   private boolean         isSelf;
 
-  public ConversationTitleView(Context context) {
+  public WaveConversationTitleView(Context context) {
     this(context, null);
   }
 
-  public ConversationTitleView(Context context, AttributeSet attrs) {
+  public WaveConversationTitleView(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 

@@ -26,7 +26,7 @@ import org.thoughtcrime.securesms.Unbindable
 import org.thoughtcrime.securesms.components.settings.conversation.ConversationSettingsActivity
 import org.thoughtcrime.securesms.conversation.ConversationAdapter.ItemClickListener
 import org.thoughtcrime.securesms.conversation.ConversationAdapterBridge
-import org.thoughtcrime.securesms.conversation.ConversationHeaderView
+import org.thoughtcrime.securesms.conversation.WaveConversationHeaderView
 import org.thoughtcrime.securesms.conversation.ConversationItemDisplayMode
 import org.thoughtcrime.securesms.conversation.ConversationMessage
 import org.thoughtcrime.securesms.conversation.colors.Colorizable
@@ -533,7 +533,7 @@ class ConversationAdapterV2(
   }
 
   inner class ThreadHeaderViewHolder(itemView: View) : MappingViewHolder<ThreadHeader>(itemView) {
-    private val conversationBanner: ConversationHeaderView = itemView as ConversationHeaderView
+    private val conversationBanner: WaveConversationHeaderView = itemView as WaveConversationHeaderView
 
     override fun bind(model: ThreadHeader) {
       val (recipient, groupInfo, sharedGroups, messageRequestState) = model.recipientInfo
