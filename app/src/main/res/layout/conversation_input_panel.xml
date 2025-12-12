@@ -41,7 +41,7 @@
         tools:visibility="gone" />
 
     <View
-        android:id="@id/compose_bubble"
+        android:id="@+id/compose_bubble"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="12dp"
@@ -50,7 +50,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/compose_background"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_toggle"
+        app:layout_constraintEnd_toStartOf="@id/button_toggle"
         app:layout_constraintStart_toEndOf="@id/input_panel_exit_edit_mode"
         app:layout_constraintTop_toBottomOf="@id/input_panel_sticker_suggestion" />
 
@@ -68,7 +68,7 @@
         android:visibility="gone"
         app:drawableStartCompat="@drawable/symbol_edit_compact_16"
         app:drawableTint="@color/wave_colorOnSurface"
-        app:layout_constraintEnd_toStartOf="@+id/edit_message_thumbnail"
+        app:layout_constraintEnd_toStartOf="@id/edit_message_thumbnail"
         app:layout_constraintStart_toStartOf="@id/compose_bubble"
         app:layout_constraintTop_toTopOf="@id/compose_bubble"
         tools:visibility="visible" />
@@ -94,9 +94,9 @@
         android:layout_marginHorizontal="6dp"
         android:layout_marginTop="6dp"
         android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="@+id/compose_bubble"
-        app:layout_constraintStart_toStartOf="@+id/compose_bubble"
-        app:layout_constraintTop_toBottomOf="@+id/edit_message_title"
+        app:layout_constraintEnd_toEndOf="@id/compose_bubble"
+        app:layout_constraintStart_toStartOf="@id/compose_bubble"
+        app:layout_constraintTop_toBottomOf="@id/edit_message_title"
         app:message_type="preview"
         app:quote_colorPrimary="@color/wave_text_primary"
         app:quote_colorSecondary="@color/wave_text_primary"
@@ -109,9 +109,9 @@
         android:layout_marginHorizontal="6dp"
         android:layout_marginTop="6dp"
         android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="@+id/compose_bubble"
-        app:layout_constraintStart_toStartOf="@+id/compose_bubble"
-        app:layout_constraintTop_toBottomOf="@+id/quote_view"
+        app:layout_constraintEnd_toEndOf="@id/compose_bubble"
+        app:layout_constraintStart_toStartOf="@id/compose_bubble"
+        app:layout_constraintTop_toBottomOf="@id/quote_view"
         app:linkpreview_type="compose" />
 
     <androidx.constraintlayout.widget.Barrier
@@ -136,6 +136,23 @@
         app:layout_constraintTop_toBottomOf="@id/compose_bubble_top_elements"
         app:layout_constraintVertical_bias="1.0"
         app:tint="@color/wave_colorOnSurfaceVariant" />
+    
+    <ImageButton
+        android:id="@+id/agares_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/conversation_compose_height"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:contentDescription="@string/agares_ai"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/compose_bubble"
+        app:layout_constraintStart_toEndOf="@id/emoji_toggle"
+        app:layout_constraintTop_toBottomOf="@id/compose_bubble_top_elements"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_agares"
+        app:tint="@color/wave_colorOnSurfaceVariant" />
 
     <FrameLayout
         android:id="@+id/embedded_text_editor_container"
@@ -143,7 +160,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@id/compose_bubble"
         app:layout_constraintEnd_toStartOf="@id/attachment_barrier"
-        app:layout_constraintStart_toEndOf="@id/emoji_toggle"
+        app:layout_constraintStart_toEndOf="@id/agares_button"
         android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@id/compose_bubble_top_elements">
 

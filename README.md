@@ -1,7 +1,6 @@
 # Wave Android
 
-Wave is a simple, powerful, and secure messenger that uses your phone's data connection (WiFi/3G/4G/5G) to communicate securely.
-
+addcon
 Millions of people use Wave every day for free and instantaneous communication anywhere in the world. Send and receive high-fidelity messages, participate in HD voice/video calls, and explore a growing set of new features that help you stay connected.
 
 Wave’s advanced privacy-preserving technology is always enabled, so you can focus on sharing the moments that matter with the people who matter to you.
@@ -11,6 +10,11 @@ Currently available on the [Play Store](https://play.google.com/store/apps/detai
 <a href='https://play.google.com/store/apps/details?id=org.wave.securesms&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80px'/></a>
 
 Also available on [iOS](https://github.com/waveapp/wave-ios) and [Desktop](https://github.com/waveapp/wave-desktop).
+
+## Agares - The Wave AI
+
+Wave now features Agares, a powerful AI assistant to help you with your daily tasks. Agares can do everything an AI can do, right within your favorite messaging app.
+
 
 ## Contributing Bug Reports
 We use GitHub for bug tracking. Please search the existing issues for your bug and create a new one if the issue is not yet tracked!

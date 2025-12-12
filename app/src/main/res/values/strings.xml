@@ -9,5 +9,6 @@
     <string name="rebrand_dynamic_theming_description">Personalize your app experience with themes that adapt to your device\'s wallpaper.</string>
     <string name="rebrand_ai_powered_summarization_title">AI-Powered Summarization</string>
     <string name="rebrand_ai_powered_summarization_description">Get the gist of long conversations instantly with AI-powered summaries.</string>
+    <string name="agares_ai">Agares AI</string>
 
 </resources>
