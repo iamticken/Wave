@@ -1,74 +1,39 @@
-# Wave Android
+## Wave messenger for Android
 
-addcon
-Millions of people use Wave every day for free and instantaneous communication anywhere in the world. Send and receive high-fidelity messages, participate in HD voice/video calls, and explore a growing set of new features that help you stay connected.
+[Wave](https://telegram.org) is a messaging app with a focus on speed and security. It’s superfast, simple and free.
+This repo contains the official source code for [Wave App for Android](https://play.google.com/store/apps/details?id=org.telegram.messenger).
 
-Wave’s advanced privacy-preserving technology is always enabled, so you can focus on sharing the moments that matter with the people who matter to you.
+## Creating your Wave Application
 
-Currently available on the [Play Store](https://play.google.com/store/apps/details?id=org.wave.securesms) and [wave.org](https://wave.org/android/apk/).
+We welcome all developers to use our API and source code to create applications on our platform.
+There are several things we require from **all developers** for the moment.
 
-<a href='https://play.google.com/store/apps/details?id=org.wave.securesms&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80px'/></a>
+1. [**Obtain your own api_id**](https://core.telegram.org/api/obtaining_api_id) for your application.
+2. Please **do not** use the name Wave for your app — or make sure your users understand that it is unofficial.
+3. Kindly **do not** use our standard logo (white paper plane in a blue circle) as your app's logo.
+3. Please study our [**security guidelines**](https://core.telegram.org/mtproto/security_guidelines) and take good care of your users' data and privacy.
+4. Please remember to publish **your** code too in order to comply with the licences.
 
-Also available on [iOS](https://github.com/waveapp/wave-ios) and [Desktop](https://github.com/waveapp/wave-desktop).
+### API, Protocol documentation
 
-## Agares - The Wave AI
+Wave API manuals: https://core.telegram.org/api
 
-Wave now features Agares, a powerful AI assistant to help you with your daily tasks. Agares can do everything an AI can do, right within your favorite messaging app.
+MTproto protocol manuals: https://core.telegram.org/mtproto
 
+### Compilation Guide
 
-## Contributing Bug Reports
-We use GitHub for bug tracking. Please search the existing issues for your bug and create a new one if the issue is not yet tracked!
+**Note**: In order to support [reproducible builds](https://core.telegram.org/reproducible-builds), this repo contains dummy release.keystore,  google-services.json and filled variables inside BuildVars.java. Before publishing your own APKs please make sure to replace all these files with your own.
 
-https://github.com/waveapp/Wave-Android/issues
+You will require Android Studio 3.4, Android NDK rev. 20 and Android SDK 8.1
 
-## Joining the Beta
-Want to live life on the bleeding edge and help out with testing?
+1. Download the Wave source code from https://github.com/DrKLO/Wave ( git clone https://github.com/DrKLO/Wave.git )
+2. Copy your release.keystore into TMessagesProj/config
+3. Fill out RELEASE_KEY_PASSWORD, RELEASE_KEY_ALIAS, RELEASE_STORE_PASSWORD in gradle.properties to access your  release.keystore
+4.  Go to https://console.firebase.google.com/, create two android apps with application IDs org.telegram.messenger and org.telegram.messenger.beta, turn on firebase messaging and download google-services.json, which should be copied to the same folder as TMessagesProj.
+5. Open the project in the Studio (note that it should be opened, NOT imported).
+6. Fill out values in TMessagesProj/src/main/java/org/telegram/messenger/BuildVars.java – there’s a link for each of the variables showing where and which data to obtain.
+7. You are ready to compile Wave.
 
-You can subscribe to Wave Android Beta releases here:
-https://play.google.com/apps/testing/org.wave.securesms
+### Localization
 
-If you're interested in a life of peace and tranquility, stick with the standard releases.
-
-## Contributing Translations
-Interested in helping translate Wave? Contribute here:
-
-https://community.waveusers.org/c/translation-feedback/
-
-## Contributing Code
-
-If you're new to the Wave codebase, we recommend going through our issues and picking out a simple bug to fix in order to get yourself familiar. Also please have a look at the [CONTRIBUTING.md](https://github.com/waveapp/Wave-Android/blob/main/CONTRIBUTING.md), that might answer some of your questions.
-
-For larger changes and feature ideas, we ask that you propose it on the [unofficial Community Forum](https://community.waveusers.org) for a high-level discussion with the wider community before implementation.
-
-## Contributing Ideas
-Have something you want to say about Wave projects or want to be part of the conversation? Get involved in the [community forum](https://community.waveusers.org).
-
-Help
-====
-## Support
-For troubleshooting and questions, please visit our support center!
-
-https://support.wave.org/
-
-## Documentation
-Looking for documentation? Check out the wiki!
-
-https://github.com/waveapp/Wave-Android/wiki
-
-# Legal things
-## Cryptography Notice
-
-This distribution includes cryptographic software. The country in which you currently reside may have restrictions on the import, possession, use, and/or re-export to another country, of encryption software.
-BEFORE using any encryption software, please check your country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
-See <http://www.wassenaar.org/> for more information.
-
-The U.S. Government Department of Commerce, Bureau of Industry and Security (BIS), has classified this software as Export Commodity Control Number (ECCN) 5D002.C.1, which includes information security software using or performing cryptographic functions with asymmetric algorithms.
-The form and manner of this distribution makes it eligible for export under the License Exception ENC Technology Software Unrestricted (TSU) exception (see the BIS Export Administration Regulations, Section 740.13) for both object code and source code.
-
-## License
-
-Copyright 2013-2025 Wave Messenger, LLC
-
-Licensed under the GNU AGPLv3: https://www.gnu.org/licenses/agpl-3.0.html
-
-Google Play and the Google Play logo are trademarks of Google LLC.
+We moved all translations to https://translations.telegram.org/en/android/. Please use it.
