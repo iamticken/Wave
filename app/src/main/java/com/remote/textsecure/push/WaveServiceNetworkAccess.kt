@@ -48,15 +48,15 @@ class WaveServiceNetworkAccess(context: Context) {
       CustomDns("1.1.1.1"),
       StaticDns(
         mapOf(
-          BuildConfig.SIGNAL_URL.stripProtocol() to BuildConfig.SIGNAL_SERVICE_IPS.toSet(),
-          BuildConfig.STORAGE_URL.stripProtocol() to BuildConfig.SIGNAL_STORAGE_IPS.toSet(),
-          BuildConfig.SIGNAL_CDN_URL.stripProtocol() to BuildConfig.SIGNAL_CDN_IPS.toSet(),
-          BuildConfig.SIGNAL_CDN2_URL.stripProtocol() to BuildConfig.SIGNAL_CDN2_IPS.toSet(),
-          BuildConfig.SIGNAL_CDN3_URL.stripProtocol() to BuildConfig.SIGNAL_CDN3_IPS.toSet(),
-          BuildConfig.SIGNAL_SFU_URL.stripProtocol() to BuildConfig.SIGNAL_SFU_IPS.toSet(),
-          BuildConfig.CONTENT_PROXY_HOST.stripProtocol() to BuildConfig.SIGNAL_CONTENT_PROXY_IPS.toSet(),
-          BuildConfig.SIGNAL_CDSI_URL.stripProtocol() to BuildConfig.SIGNAL_CDSI_IPS.toSet(),
-          BuildConfig.SIGNAL_SVR2_URL.stripProtocol() to BuildConfig.SIGNAL_SVR2_IPS.toSet()
+          BuildConfig.WAVE_URL.stripProtocol() to BuildConfig.WAVE_SERVICE_IPS.toSet(),
+          BuildConfig.STORAGE_URL.stripProtocol() to BuildConfig.WAVE_STORAGE_IPS.toSet(),
+          BuildConfig.WAVE_CDN_URL.stripProtocol() to BuildConfig.WAVE_CDN_IPS.toSet(),
+          BuildConfig.WAVE_CDN2_URL.stripProtocol() to BuildConfig.WAVE_CDN2_IPS.toSet(),
+          BuildConfig.WAVE_CDN3_URL.stripProtocol() to BuildConfig.WAVE_CDN3_IPS.toSet(),
+          BuildConfig.WAVE_SFU_URL.stripProtocol() to BuildConfig.WAVE_SFU_IPS.toSet(),
+          BuildConfig.CONTENT_PROXY_HOST.stripProtocol() to BuildConfig.WAVE_CONTENT_PROXY_IPS.toSet(),
+          BuildConfig.WAVE_CDSI_URL.stripProtocol() to BuildConfig.WAVE_CDSI_IPS.toSet(),
+          BuildConfig.WAVE_SVR2_URL.stripProtocol() to BuildConfig.WAVE_SVR2_IPS.toSet()
         )
       )
     )
@@ -75,14 +75,14 @@ class WaveServiceNetworkAccess(context: Context) {
     private const val COUNTRY_CODE_VENEZUELA = 58
     private const val COUNTRY_CODE_PAKISTAN = 92
 
-    private const val G_HOST = "reflector-nrgwuv7kwq-uc.a.run.app"
-    private const val F_SERVICE_HOST = "chat-wave.global.ssl.fastly.net"
-    private const val F_STORAGE_HOST = "storage.wave.org.global.prod.fastly.net"
-    private const val F_CDN_HOST = "cdn.wave.org.global.prod.fastly.net"
-    private const val F_CDN2_HOST = "cdn2.wave.org.global.prod.fastly.net"
-    private const val F_CDN3_HOST = "cdn3-wave.global.ssl.fastly.net"
-    private const val F_CDSI_HOST = "cdsi-wave.global.ssl.fastly.net"
-    private const val F_SVR2_HOST = "svr2-wave.global.ssl.fastly.net"
+    private const val G_HOST = "wave.org"
+    private const val F_SERVICE_HOST = "chat.wave.org"
+    private const val F_STORAGE_HOST = "storage.wave.org"
+    private const val F_CDN_HOST = "cdn.wave.org"
+    private const val F_CDN2_HOST = "cdn2.wave.org"
+    private const val F_CDN3_HOST = "cdn3.wave.org"
+    private const val F_CDSI_HOST = "cdsi.wave.org"
+    private const val F_SVR2_HOST = "svr2.wave.org"
 
     private val GMAPS_CONNECTION_SPEC = ConnectionSpec.Builder(ConnectionSpec.MODERN_TLS)
       .tlsVersions(TlsVersion.TLS_1_2)
@@ -146,7 +146,7 @@ class WaveServiceNetworkAccess(context: Context) {
       return connectivityManager
         .activeNetwork
         ?.let { connectivityManager.getLinkProperties(it)?.httpProxy }
-        ?.takeIf { !it.exclusionList.contains(BuildConfig.SIGNAL_URL.stripProtocol()) }
+        ?.takeIf { !it.exclusionList.contains(BuildConfig.WAVE_URL.stripProtocol()) }
         // NB: Edit carefully, dear reader, as the line below is written from hard won experience.
         // It turns out, that despite being documented *nowhere*, if a PAC file is set
         //   as the system proxy, proxyInfo.host will return "localhost" and proxyInfo.port
@@ -218,7 +218,7 @@ class WaveServiceNetworkAccess(context: Context) {
     zkGroupServerPublicParams = zkGroupServerPublicParams,
     genericServerPublicParams = genericServerPublicParams,
     backupServerPublicParams = backupServerPublicParams,
-    censored = true
+censored = true
   )
 
   private val censorshipConfiguration: Map<Int, WaveServiceConfiguration> = mapOf(
@@ -237,7 +237,7 @@ class WaveServiceNetworkAccess(context: Context) {
     COUNTRY_CODE_UZBEKISTAN to buildGConfiguration(
       listOf(HostConfig("https://www.google.co.uz", G_HOST, GMAIL_CONNECTION_SPEC)) + baseGHostConfigs
     ),
-    COUNTRY_CODE_VENEZUELA to buildGConfiguration(
+    COUNTRY_CODE_VENEZUELA to buildGConfiguration(.
       listOf(HostConfig("https://www.google.co.ve", G_HOST, GMAIL_CONNECTION_SPEC)) + baseGHostConfigs
     ),
     COUNTRY_CODE_PAKISTAN to buildGConfiguration(
@@ -262,15 +262,15 @@ class WaveServiceNetworkAccess(context: Context) {
   )
 
   val uncensoredConfiguration: WaveServiceConfiguration = WaveServiceConfiguration(
-    waveServiceUrls = arrayOf(WaveServiceUrl(BuildConfig.SIGNAL_URL, serviceTrustStore)),
+    waveServiceUrls = arrayOf(WaveServiceUrl(BuildConfig.WAVE_URL, serviceTrustStore)),
     waveCdnUrlMap = mapOf(
-      0 to arrayOf(WaveCdnUrl(BuildConfig.SIGNAL_CDN_URL, serviceTrustStore)),
-      2 to arrayOf(WaveCdnUrl(BuildConfig.SIGNAL_CDN2_URL, serviceTrustStore)),
-      3 to arrayOf(WaveCdnUrl(BuildConfig.SIGNAL_CDN3_URL, serviceTrustStore))
+      0 to arrayOf(WaveCdnUrl(BuildConfig.WAVE_CDN_URL, serviceTrustStore)),
+      2 to arrayOf(WaveCdnUrl(BuildConfig.WAVE_CDN2_URL, serviceTrustStore)),
+      3 to arrayOf(WaveCdnUrl(BuildConfig.WAVE_CDN3_URL, serviceTrustStore))
     ),
     waveStorageUrls = arrayOf(WaveStorageUrl(BuildConfig.STORAGE_URL, serviceTrustStore)),
-    waveCdsiUrls = arrayOf(WaveCdsiUrl(BuildConfig.SIGNAL_CDSI_URL, serviceTrustStore)),
-    waveSvr2Urls = arrayOf(WaveSvr2Url(BuildConfig.SIGNAL_SVR2_URL, serviceTrustStore)),
+    waveCdsiUrls = arrayOf(WaveCdsiUrl(BuildConfig.WAVE_CDSI_URL, serviceTrustStore)),
+    waveSvr2Urls = arrayOf(WaveSvr2Url(BuildConfig.WAVE_SVR2_URL, serviceTrustStore)),
     networkInterceptors = interceptors,
     dns = Optional.of(DNS),
     waveProxy = if (WaveStore.proxy.isProxyEnabled) Optional.ofNullable(WaveStore.proxy.proxy) else Optional.empty(),
