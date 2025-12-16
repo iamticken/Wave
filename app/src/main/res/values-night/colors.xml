@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wave_primary">#1A91DA</color>
+    <color name="wave_primary_dark">#1880C1</color>
+    <color name="wave_accent">#1DA1F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="divider">#333333</color>
+    <color name="widget_name">#FFFFFF</color>
+    <color name="widget_badge">#000000</color>
+    <color name="widget_time">#999999</color>
+    <color name="widget_text">#AAAAAA</color>
+    <color name="widget_divider">#444444</color>
+    <color name="widget_action_text">#AAAAAA</color>
+    <color name="widget_edit_text">#888888</color>
+</resources>

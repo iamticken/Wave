@@ -1,69 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="wave_primary">#1DA1F2</color>
+    <color name="wave_primary_dark">#1A91DA</color>
+    <color name="wave_accent">#1DA1F2</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 
-    <color name="wave_primary">#1DA1F2</color>
-    <color name="wave_primary_dark">#1DA1F2</color>
-    <color name="wave_accent">#1DA1F2</color>
-    <color name="wave_accent_green">#4CAF50</color>
-
-    <color name="story_gradient_start">#99000000</color>
-    <color name="story_caption_gradient_start">#CC000000</color>
-
-    <color name="webrtc_hangup_background">#F07168</color>
-    <color name="webrtc_answer_background">#34C759</color>
-
-    <color name="transparent_black_05">#0D000000</color>
-    <color name="transparent_black_08">#14000000</color>
-    <color name="transparent_black_10">#18000000</color>
-    <color name="transparent_black_15">#26000000</color>
-    <color name="transparent_black_20">#33000000</color>
-    <color name="transparent_black_25">#40000000</color>
-    <color name="transparent_black_30">#4D000000</color>
-    <color name="transparent_black_40">#66000000</color>
-    <color name="transparent_black_50">#80000000</color>
-    <color name="transparent_black_60">#99000000</color>
-    <color name="transparent_black_70">#b3000000</color>
-    <color name="transparent_black_80">#CC000000</color>
-
-    <color name="transparent_white_05">#0Dffffff</color>
-    <color name="transparent_white_10">#18ffffff</color>
-    <color name="transparent_white_15">#26ffffff</color>
-    <color name="transparent_white_20">#33ffffff</color>
-    <color name="transparent_white_25">#40ffffff</color>
-    <color name="transparent_white_30">#4Dffffff</color>
-    <color name="transparent_white_40">#66ffffff</color>
-    <color name="transparent_white_60">#99ffffff</color>
-    <color name="transparent_white_70">#b2ffffff</color>
-    <color name="transparent_white_80">#ccffffff</color>
-    <color name="transparent_white_87">#dfffffff</color>
-    <color name="transparent_white_90">#e6ffffff</color>
-
-    <color name="paypal_outline">#80838089</color>
-
-    <color name="conversation_compose_divider">#32000000</color>
-
-    <color name="touch_highlight">#401DA1F2</color>
-    <color name="touch_highlight_material3">#14E2E1E5</color>
-
-    <color name="ConversationListTabs__unread">#FFCE4A40</color>
-
-    <color name="transparent">#00FFFFFF</color>
-    <color name="transparent_black">#00000000</color>
-
-    <color name="media_preview_bar_background">#90010101</color>
-
-    <color name="storage_color_empty">#BDBDBD</color>
-    <color name="storage_color_photos">#1DA1F2</color>
-    <color name="storage_color_videos">#9BCFBD</color>
-    <color name="storage_color_audio">#1DA1F2</color>
-    <color name="storage_color_files">#A23474</color>
-    <color name="conversation_list_archive_background_start">@color/wave_primary</color>
-    <color name="conversation_list_archive_background_end">@color/wave_primary</color>
-
-    <color name="safety_number_card_grey">#E0E0E0</color>
-    <color name="safety_number_card_blue">#1DA1F2</color>
-
-    <color name="notification_background_ultramarine">#1DA1F2</color>
+    <color name="divider">#dcdcdc</color>
+    <color name="widget_name">#212121</color>
+    <color name="widget_badge">#ffffff</color>
+    <color name="widget_time">#96999C</color>
+    <color name="widget_text">#8B8D8F</color>
+    <color name="widget_divider">#d9d9d9</color>
+    <color name="widget_action_text">#8B8D8F</color>
+    <color name="widget_edit_text">#999999</color>
 </resources>

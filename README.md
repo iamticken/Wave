@@ -1,6 +1,6 @@
 ## Wave messenger for Android
 
-[Wave](https://telegram.org) is a messaging app with a focus on speed and security. It’s superfast, simple and free.
+[Wave(https://telegram.org) is a mest5saging app with a focus on speed and security. It’s superfast, simple and free.
 This repo contains the official source code for [Wave App for Android](https://play.google.com/store/apps/details?id=org.telegram.messenger).
 
 ## Creating your Wave Application
